@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background-color: #ddd;
+  
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 10px 90px;
+  text-decoration: none;
+  text-align:center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+/* .main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+} */
+
+/* Fake image, just for this example */
+/* .fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+} */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+  background-image:url(Tour_images/Homepage\ background.jpg) ;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  color:whitesmoke;
+  font-weight: bold;
+  text-transform:capitalize;
+  margin: 0;
+}
+
+.main p {
+  font-size: 20px;
+  color:yellow;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/* .intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+} */
+
+.about-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+ .about-us .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+} 
+/* 
+.achievements .work i {
+  width: fit-content;
+  font-size: 50px;
+  color: #e612c6;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 12px;
+}  */
+
+.about-us .work .work-heading {
+  font-size: 20px;
+  color: #3007a0;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.about-us .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+  width: 500px; 
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  color: #3007a0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 15px;
+  color: #585858;
+  margin: 10px 0;
+}
+/* Footer */
+.footer {
+    background-color: black;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: small;
+
+}
+
+/* .left-col{
+
+    background-color: #1abc9c;
+    text-align: left;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.right-col{
+    text-align: right;
+    flex-direction: column;
+    background: green;
+
+} */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<!-- Note 
+<div style="background:yellow;padding: 5px;px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div>  -->
+
+<!-- Header -->
+<div class="header">
+  <!-- <h1>Activities</h1>
+  <p> You are guaranteed an amazing experience </p> -->
+</div>
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+   
+  <a href="Homepage.html">Home</a></p>
+   <a href="Destinations.html">Destinations</a></p>
+   <a href="Activities.html">Activities</a></p>
+   <!-- <a href="Gallery.html">Gallery</a></p> -->
+   <a href="Contact_us.html">Contact us</a></p>
+ 
+</div>
+
+<!-- The flexible grid (content) -->
+<!-- <div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div> -->
+
+
+  <div class="main">
+    <!-- <h2>TITLE HEADING</h2> -->
+
+    <!-- <div class="intro"> -->
+    <h1>Design my trip</h1>
+    <p>We will simply design your trip and guaranty you an amazing experience!</p>
+    <!-- <button>Learn More</button> -->
+  </div>
+  <div class="about-us">
+    <div class="work">
+      <i class="fas fa-atom"></i>
+      <p class="work-heading">About Us</p>
+      <p class="work-text">Established in April 2010, We have worked hard to build up our brand through partnering
+        with some of the most of the luxurious hospitality and leisure brands around the globe to give you the best holiday experience you deserve.</p>
+    </div>
+    <div class="work">
+      <i class="fas fa-skiing"></i>
+      <p class="work-heading">What we do</p>
+      <p class="work-text"> We go extra miles for our customers to help them create memories that last forever. </p>
+    </div>
+    <div class="work">
+      <i class="fas fa-ethernet"></i>
+      <p class="work-heading">Our values</p>
+      <p class="work-text">Understand customers, be first to meet their needs and act responsibly for our communities.</p>
+    </div>
+  </div>
+  <div class="about-me">
+    <div class="about-me-text">Our Promise</p>
+      <p class="about-me-text">Established in April 2010, We have worked hard to build up our brand through partnering with some of the most of the luxurious hospitality and leisure brands around the globe to give you the best holiday experience you deserve.</p>
+      <!-- <h4>Our Promise</h4>
+      <p> -->
+    </div>
+    <img src="Tour_images/Homepage2.jpg" alt="me">
+  </div>
+    <!-- <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div> -->
+
+<!-- Footer -->
+<div class="footer">
+    <footer>
+        <p>
+          Copyright 2023 by Akin. All Rights Reserved.
+        </p>
+        <span style="color: var(--colors-primary)">
+            <a target="_blank" href="https://linkedin.com/in/akinfolu">Linkedin</a>
+            <a target="_blank" href="https://github.com/telkynsolutions/CodeDF">GitHub</a> 
+            <a target="_blank" href="https://twitter.com/foludakinz">Twitter</a>
+          </span>
+      </footer>
+</html>
+
+
